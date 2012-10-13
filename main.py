@@ -30,7 +30,7 @@ if platform.system()=='Darwin':
       dir_res=os.path.join(app,'Contents/resources')
    os.chdir(dir_root)
    cfg=SafeConfigParser()
-   cfg.read("modman.ini")
+   cfg.read("modman.cfg")
    dir_mods=cfg.get("settings","macmodsdir")
    dir_mods=os.path.expanduser(dir_mods)
    if not os.path.exists(dir_mods):
@@ -110,7 +110,7 @@ else:
 
 # Load up config file values
 cfg = SafeConfigParser()
-cfg.read("modman.ini")
+cfg.read("modman.cfg")
 
 allowzip = cfg.getboolean("settings", "allowzip")
 
