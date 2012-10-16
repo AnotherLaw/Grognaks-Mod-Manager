@@ -22,7 +22,7 @@ if platform.system()=='Darwin':
    msg="Are you using Steam?"
    yn=["Yes","No"]
    steam=eg.choicebox(msg,progname,yn)
-   dir_root=os.path.split(argv[0])[0]
+   dir_root=os.getcwd() + '/'
    if steam=='Yes':
        dir_res=os.path.join(os.environ['HOME'],'Library/Application Support/Steam/SteamApps/common/FTL Faster Than Light/FTL.app/Contents/resources')
    if steam=='No' or steam==None:
