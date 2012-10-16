@@ -35,7 +35,7 @@ if platform.system()=='Darwin':
    dir_mods=os.path.expanduser(dir_mods)
    if not os.path.exists(dir_mods):
       os.makedirs(dir_mods)
-      copy(os.path.join(dir_root,"mods/Beginning Scrap Advantage.ftl"),dir_mods)
+      #copy(os.path.join(dir_root,"mods/Beginning Scrap Advantage.ftl"),dir_mods)
       eg.msgbox("A folder has been created on "+dir_mods+" .Please put any FTL mods there.",progname)
 else:
    dir_root = dir_root = os.path.realpath(__file__)
