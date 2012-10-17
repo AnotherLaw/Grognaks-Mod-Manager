@@ -21,7 +21,6 @@ import os
 progname = "Grognak's Mod Manager v1.4"
 mergelist = None
 
-<<<<<<< HEAD
 class MainWindow:
     def __init__(self, parent):
         self.myParent = parent
