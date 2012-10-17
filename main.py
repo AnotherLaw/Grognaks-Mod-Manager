@@ -603,5 +603,6 @@ if platform.system() == "Windows":
         os.system("\"" + os.path.join(dir_root, "FTLGame.exe") + "\"")
 else:
     msgbox.showinfo(progname, "Patching completed successfully.")
+    exit()
 
 
