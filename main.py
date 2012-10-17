@@ -21,6 +21,7 @@ import os
 progname = "Grognak's Mod Manager v1.4"
 mergelist = None
 
+<<<<<<< HEAD
 class MainWindow:
     def __init__(self, parent):
         self.myParent = parent
@@ -442,6 +443,7 @@ elif platform.system() == "Darwin":
        copy(os.path.join(dir_root, "mods/Beginning Scrap Advantage.ftl"), dir_mods)
        msgbox.showinfo(progname, "A folder has been created in " + dir_mods + ". Please place any FTL mods there.")
 else:
+
     msgbox.showwarning(progname, "Unsupported platform; unexpected behavior may occur.")
 
 # Loop through the .ftl files, check if on mod list.
@@ -602,8 +604,5 @@ if platform.system() == "Windows":
         os.system("\"" + os.path.join(dir_root, "FTLGame.exe") + "\"")
 else:
     msgbox.showinfo(progname, "Patching completed successfully.")
-
-
-
 
 
