@@ -1,6 +1,6 @@
 import zipfile as zf # This is included in GMM as well, no need to include when merging.
-import os
-import StringIO
+import os            # Same with this one.
+import StringIO      # But I'll need to add these two.
 import urllib
 
 def openModDescription():
@@ -14,5 +14,9 @@ def openModDescription():
 
 words = openModDescription().readlines()
 modTitle = words[0].strip()
+modVersion = words[1].strip()
+modAuthor = words[2].strip()
 print words
 print modTitle
+print modVersion
+print modAuthor
