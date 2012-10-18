@@ -430,6 +430,8 @@ elif platform.system() == "Darwin":
     if steam == True:
         dir_res = os.path.join(os.environ['HOME'], 'Library/Application Support/Steam/SteamApps/common/FTL Faster Than Light/FTL.app/Contents/Resources')
     if steam == False or steam == None:
+	dir_root = '/Applications/FTL.app/Contents/'
+        dir_res = '/Applications/FTL.app/Contents/Resources'
         if not os.path.isfile(os.path.join(dir_root, "MacOS", "FTL")):
             msgbox.showerror(progname, "Grognak's Mod Manager must be located directly above the MacOS folder in FTL.dat")
             sys.exit(0)
