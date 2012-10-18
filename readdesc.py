@@ -13,4 +13,6 @@ def openModDescription():
 # read the lines.
 
 words = openModDescription().readlines()
+modTitle = words[0].strip()
 print words
+print modTitle
